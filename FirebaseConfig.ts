@@ -1,15 +1,16 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { apiKey, authDomain, projectId, storageBucket, messagingSenderId, appId } from "@env"
 
 // Initialize Firebase with web app's config
 const firebaseConfig = {
-    apiKey: "AIzaSyDdzugwUFPW39cV5A-wNUWeBw2g-oRTTUc",
-    authDomain: "rntodoapp-e6a70.firebaseapp.com",
-    projectId: "rntodoapp-e6a70",
-    storageBucket: "rntodoapp-e6a70.appspot.com",
-    messagingSenderId: "963298885164",
-    appId: "1:963298885164:web:647df95df995e84b215b89"
+    apiKey: apiKey,
+    authDomain: authDomain,
+    projectId: projectId,
+    storageBucket: storageBucket,
+    messagingSenderId: messagingSenderId,
+    appId: appId
 };
 
 export const FIREBASE_APP = initializeApp(firebaseConfig);
